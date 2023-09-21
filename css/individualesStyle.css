@@ -184,6 +184,7 @@ body {
 
 .destination__card {
   height: 100%;
+  margin-right: 15px;
   background-color: var(--white);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
 }
