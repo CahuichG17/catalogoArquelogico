@@ -282,3 +282,45 @@ audio {
     margin: 0 auto;
     display: block;
 }
+
+.btnHome {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: beige;
+ }
+ 
+ .btnHome > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+ }
+ 
+ .btnHome:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+ }
+ 
+ button:hover {
+  box-shadow: 9px 9px 33px #0f745e, -9px -9px 33px #0f745e;
+  transform: translateY(-2px);
+ }
+ 
+ .navCenter {
+  display: flex;
+  align-items: center;
+  
+ }
+
+ .navCenter .btnHome {
+  margin-left: 3rem;
+ }

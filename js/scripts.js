@@ -1,7 +1,5 @@
 window.addEventListener('load', function() {
-    // Oculta el loader
     document.getElementById('loader').style.display = 'none';
-    // Muestra el contenido principal
     document.getElementById('contenido').style.display = 'block';
 });
 
