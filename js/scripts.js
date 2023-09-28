@@ -1,13 +1,35 @@
-window.addEventListener('load', function() {
-    document.getElementById('loader').style.display = 'none';
-    document.getElementById('contenido').style.display = 'block';
-});
 
-const showVideoButtons = document.querySelectorAll('.show-video-button');
-showVideoButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const card = button.closest('.card');
-        const videoContainer = card.querySelector('.video-container');
-        videoContainer.style.display = 'block';
+
+function clickBartender(e) {
+    e.preventDefault();
+    const bars = document.querySelectorAll('.bar');
+    bars.forEach((bar, i) => {
+        bar.style.animationPlayState = "running";
+
     });
-});
+    const lastBar = bars[bars.length - 1];
+    lastBar.addEventListener("animationend", () => {
+        setTimeout(() => {
+            window.location = e.target.href;
+        }, 500);
+    });
+    console.log(e.target.href);
+
+}
+
+function clickBartenderIndividual(e) {
+    e.preventDefault();
+    const bars = document.querySelectorAll('.bar');
+    bars.forEach((bar, i) => {
+        bar.style.animationPlayState = "running";
+
+    });
+    const lastBar = bars[bars.length - 1];
+    lastBar.addEventListener("animationend", () => {
+        setTimeout(() => {
+            window.location = "/catalogo.html";
+        }, 500);
+    });
+    console.log(e.target.href);
+
+}

@@ -23,16 +23,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-    <link href="css/style.css" rel="stylesheet">
-
     <link rel="script" href="js/scripts.js">
+    <link href="css/style.css" rel="stylesheet">
 
     <title>Catalogo</title>
 </head>
-
 <body>
 
     <style>
@@ -72,9 +69,10 @@
     <div class="container mt-5">
         <div class="container justify-content-center">
 
-            <center>
-                <h1>México en la piel</h1>
-            </center>
+            <div class="textoMaya">
+                <h1 class="mayaH1" contenteditable>Maya Mágico</h1>
+                <p class="mayaP">Explorando las Costumbres Mayas en Realidad Aumentada.</p>
+            </div>
             <br>
             <hr>
             <br>
@@ -84,17 +82,23 @@
 
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card" style="background-color: #00ab84;">
-                    <img src=" images/chichenItza.jpg" class="card-img-top img-fluid" alt="Imagen">
+                    <img src="images/chichenItza.jpg" class="card-img-top img-fluid" alt="Imagen">
                     <div class="card-body">
                         <h5 class="card-title text-light">Chichén Itza:</h5>
-                        <p class="card-text text-light">Chichén Itzá es una de las zonas arqueológicas más famosas de México. Fue una ciudad maya y luego una importante ciudad tolteca. El Templo de Kukulcán es su estructura más icónica.</p>
+                        <p class="card-text text-light">Chichén Itzá es una de las zonas arqueológicas más famosas de
+                            México. Fue una ciudad maya y luego una importante ciudad tolteca. El Templo de Kukulcán es
+                            su estructura más icónica.</p>
                         <p class="card-text text-light"><strong>Ubicación:</strong> Yucatán</p>
-                        <p class="card-text text-light"><strong>Fecha de Fundación:</strong>  Aproximadamente 600 d.C. a 1200 d.C.</p>
-                        <p class="card-text text-light"><strong>Importancia:</strong> Chichén Itzá es uno de los sitios arqueológicos más famosos de México y una de las Nuevas Maravillas del Mundo. Fue un importante centro ceremonial maya y más tarde una ciudad tolteca. Su pirámide, el Templo de Kukulcán, es un ejemplo impresionante de la arquitectura maya y tolteca.</p>
+                        <p class="card-text text-light"><strong>Fecha de Fundación:</strong> Aproximadamente 600 d.C. a
+                            1200 d.C.</p>
+                        <p class="card-text text-light"><strong>Importancia:</strong> Chichén Itzá es uno de los sitios
+                            arqueológicos más famosos de México y una de las Nuevas Maravillas del Mundo. Fue un
+                            importante centro ceremonial maya y más tarde una ciudad tolteca. Su pirámide, el Templo de
+                            Kukulcán, es un ejemplo impresionante de la arquitectura maya y tolteca.</p>
                     </div>
                     <center>
                         <div class="container">
-                            <a class="btn" href="vistasIndividuales/chichenItza.html">
+                            <a class="btn" onclick="clickBartender(event)" href="vistasIndividuales/chichenItza.html">
                                 Conoce más
                             </a>
                         </div>
@@ -120,7 +124,7 @@
                     </div>
                     <center>
                         <div class="container">
-                            <a class="btn" href="/vistasIndividuales/uxmal.html">
+                            <a class="btn" onclick="clickBartender(event)" href="/vistasIndividuales/uxmal.html">
                                 Conoce más
                             </a>
                         </div>
@@ -144,12 +148,12 @@
                             ubicación junto al Mar Caribe y sus murallas defensivas. Fue un puerto comercial maya y un
                             centro ceremonial. Las vistas al mar y las estructuras bien conservadas lo hacen un sitio
                             muy visitado.</p>
-                   
+
                     </div>
                     <center>
                         <div class="container"">
-                            <a class="btn" href="/vistasIndividuales/tulum.html">
-                                Conoce más
+                            <a class=" btn" onclick="clickBartender(event)" href="/vistasIndividuales/tulum.html">
+                            Conoce más
                             </a>
                         </div>
                     </center>
@@ -171,11 +175,11 @@
                         <p class="card-text text-light"><strong>Importancia:</strong> Ek Balam es menos conocida pero
                             impresionante por su Acrópolis y su estuco bien conservado. Se cree que fue un importante
                             centro político y ceremonial.</p>
-                      
+
                     </div>
                     <center>
                         <div class="container">
-                            <a class="btn" href="/vistasIndividuales/ekBalam.html">
+                            <a class="btn" onclick="clickBartender(event)" href="/vistasIndividuales/ekBalam.html">
                                 Conoce más
                             </a>
                         </div>
@@ -184,11 +188,13 @@
             </div>
 
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card" style="background-color: #00ab84;"> 
+                <div class="card" style="background-color: #00ab84;">
                     <img src=" images/coba.jpg" class="card-img-top img-fluid" alt="Imagen">
                     <div class="card-body">
                         <h5 class="card-title text-light">Coba:</h5>
-                        <p class="card-text text-light">Coba es un sitio arqueológico que se extiende por la selva. Su característica más famosa es la Gran Pirámide de Nohoch Mul, que ofrece impresionantes vistas desde la cima.</p>
+                        <p class="card-text text-light">Coba es un sitio arqueológico que se extiende por la selva. Su
+                            característica más famosa es la Gran Pirámide de Nohoch Mul, que ofrece impresionantes
+                            vistas desde la cima.</p>
                         <p class="card-text text-light"><strong>Ubicación:</strong> Yucatán</p>
                         <p class="card-text text-light"><strong>Fecha de Fundación:</strong> Aproximadamente 600 d.C. a
                             1000 d.C.
@@ -200,7 +206,7 @@
                     </div>
                     <center>
                         <div class="container">
-                            <a class="btn" href="/vistasIndividuales/coba.html">
+                            <a class="btn" onclick="clickBartender(event)" href="/vistasIndividuales/coba.html">
                                 Conoce más
                             </a>
                         </div>
@@ -225,7 +231,7 @@
                     </div>
                     <center>
                         <div class="container">
-                            <a class="btn" href="vistasIndividuales/xpujil.html">
+                            <a class="btn" onclick="clickBartender(event)" href="vistasIndividuales/xpujil.html">
                                 Conoce más
                             </a>
                         </div>
@@ -235,25 +241,49 @@
 
         </div>
         <br>
+        <br><br>
         <hr>
         <br>
     </div>
 
-
-    <div class="card-footer">
-        <footer class="d-flex flex-wrap align-items-center border-top" style="background-color: #00ab84;">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="index.html" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1"><span
-                        class="mb-3 mb-md-0 text-light">© 2022 México en la piel</span>
-                </a>
-
-            </div>
-        </footer>
+    <div class="bartender">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    
     </div>
+
+    <br><br><br>
+    <footer class="site-header" style="background-color: #00ab84;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12 d-flex flex-wrap">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <a href="index.html" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1"><span
+                                class="mb-3 mb-md-0 text-light">© 2022 México en la piel</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
 </body>
 
 </html>

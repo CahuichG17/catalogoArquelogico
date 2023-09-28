@@ -1,96 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-  
-    
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 
-    <link rel="stylesheet" href="/css/individualesStyle.css">
-    <title>Uxmal</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <style>
-      audio {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    display: block;
-}
-    </style>
-    
-    <header class="site-header" style="background-color: #00ab84; position: sticky;">
-      <div class="row">
-        <div class="navCenter">
-            <a class="btnHome" href="/catalogo.html">
-              <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
-                <path
-                  d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z">
-                </path>
-              </svg>
-              <p>Regresar</p>
-          </a>
-  
-          <audio controls autoplay>
-            <source src="audio/Xitotepec - Musica Maya.mp3" type="audio/mpeg">
-          </audio>
-        </div>
-  
+  <script src="/js/scripts.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+  <link rel="stylesheet" href="/css/individualesStyle.css">
+  <title>Uxmal</title>
+</head>
+
+<body>
+
+  <style>
+    audio {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
+
+  <header class="site-header" style="background-color: #00ab84; position: sticky;">
+    <div class="row">
+      <div class="navCenter">
+        <a class="btnHome" onclick="clickBartenderIndividual(event)"  href="/catalogo.html">
+          <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+            <path
+              d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z">
+            </path>
+          </svg>
+          <p>Regresar</p>
+        </a>
+
+        <audio controls autoplay>
+          <source src="/audio/aguaCeleste.mp3" type="audio/mpeg">
+        </audio>
       </div>
-  
-      </div>
-  
-      </div>
-    </header>
 
-
-    <div class="container">     
-      <div class="containerDestino">
-        <div class="cartasImgTexto">
-         
-        </div>
-        <div class="content">
-          <h1 class="text-dark">UXMAL<br/></h1>
-          <p>
-            Uxmal es una antigua ciudad maya ubicada en el estado de Yucatán, México, que floreció entre los siglos VI y X d.C. 
-            Una característica fascinante de Uxmal es su arquitectura única y su enfoque en la orientación astronómica. 
-            Los edificios principales de Uxmal están cuidadosamente alineados con eventos astronómicos, como los equinoccios y solsticios.
-          </p>
-        </div>
-
-
-        <div class="destination__grid">
-          <div class="destination__card">
-            <div class="card__content">
-              <h4>Piramide del Adivino</h4>
-              <br><br><br>
-                <model-viewer alt="modeloChichenItza" src="/modelos3D/uxmal3D.glb" shadow-intensity="1" camera-controls touch-action="pan-x" light="point" auto-rotate></model-viewer>
-            </div>
-          </div>
-
-          
-          <div class="content d-flex flex-row-reverse">
-            <p>
-                Uno de los ejemplos más notables de esta orientación astronómica es la <strong>Pirámide del Adivino</strong> que se construyó de tal
-                 manera que el sol naciente del equinoccio de primavera se alinea perfectamente con una de sus esquinas. 
-                 Este fenómeno crea un efecto de sombra que se asemeja a una serpiente que desciende por la pirámide, lo que algunos han interpretado como una 
-                 representación de Kukulcán, la serpiente emplumada.
-            </p>
-            <center>
-           <h1 class="text-dark "><span>YUCATÁN</span></h1>
-          </center>
-          </div>
-          
-          </div>
-        </div>
-      </div>
-    </div>  
     </div>
-  </body>
+
+    </div>
+
+    </div>
+  </header>
+
+
+  <div class="container">
+    <div class="containerDestino">
+      <div class="cartasImgTexto">
+
+      </div>
+      <div class="content">
+        <h1 class="text-dark">UXMAL<br /></h1>
+        <p>
+          Uxmal es una antigua ciudad maya ubicada en el estado de Yucatán, México, que floreció entre los siglos VI y X
+          d.C.
+          Una característica fascinante de Uxmal es su arquitectura única y su enfoque en la orientación astronómica.
+          Los edificios principales de Uxmal están cuidadosamente alineados con eventos astronómicos, como los
+          equinoccios y solsticios.
+        </p>
+      </div>
+
+
+      <div class="destination__grid">
+        <div class="destination__card">
+          <div class="card__content">
+            <h4>Piramide del Adivino</h4>
+            <br><br><br>
+            <model-viewer alt="modeloChichenItza" src="/modelos3D/uxmal3D.glb" shadow-intensity="1" camera-controls
+              touch-action="pan-x" light="point" auto-rotate></model-viewer>
+            <p>La Pirámide del Adivino es única en su forma, ya que tiene una base elíptica en lugar de ser
+              completamente cuadrada o rectangular como muchas otras pirámides mayas. Tiene una serie de terrazas
+              superpuestas y una escalinata empinada que conduce a la parte superior. </p>
+          </div>
+        </div>
+
+
+        <div class="content d-flex flex-row-reverse">
+          <p>
+            Uno de los ejemplos más notables de esta orientación astronómica es la <strong>Pirámide del Adivino</strong>
+            que se construyó de tal
+            manera que el sol naciente del equinoccio de primavera se alinea perfectamente con una de sus esquinas.
+            Este fenómeno crea un efecto de sombra que se asemeja a una serpiente que desciende por la pirámide, lo que
+            algunos han interpretado como una
+            representación de Kukulcán, la serpiente emplumada.
+          </p>
+          <center>
+            <h1 class="text-dark "><span>YUCATÁN</span></h1>
+          </center>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="bartender">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
+</body>
+
 </html>
