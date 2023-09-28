@@ -675,3 +675,7 @@ audio {
   transform: scale(1.03); /* Hacer zoom en la carta */
 }
 
+.card img {
+  height: 259px;
+}
+

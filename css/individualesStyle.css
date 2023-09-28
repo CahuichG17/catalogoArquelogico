@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
     background-color: beige;
@@ -295,7 +299,9 @@ audio {
   transition: all 0.2s linear;
   cursor: pointer;
   border: none;
-  background: beige;
+  color: black;
+  font-size: .9rem;
+  padding-right: 5px;
  }
  
  .btnHome > svg {
@@ -310,7 +316,7 @@ audio {
   transform: translateX(-5px);
  }
  
- button:hover {
+ .btnHome:hover {
   box-shadow: 9px 9px 33px #0f745e, -9px -9px 33px #0f745e;
   transform: translateY(-2px);
  }
@@ -324,3 +330,4 @@ audio {
  .navCenter .btnHome {
   margin-left: 3rem;
  }
+
