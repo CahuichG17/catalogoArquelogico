@@ -71,15 +71,15 @@
           <div class="card__content">
             <h4>Piramide de Kukulcán</h4>
             <br><br><br>
-             <button id="arButton">Ver en realidad aumentada</button>
-                <script>
-                    const arButton = document.getElementById('arButton');
-                    arButton.addEventListener('click', () => {
-                        // Abre el visor de AR Quick Look cuando se hace clic en el botón
-                        window.location.href = '../modelos3D/chichenItza3D.glb';
-                    });
-                </script>
-              <model-viewer alt="modeloChichenItza" src="../modelos3D/chichenItza3D.glb" shadow-intensity="1" camera-controls touch-action="pan-x" light="point"></model-viewer>
+            <model-viewer src="../modelos3D/chichenItza3D.glb" ar="" ar-modes="scene-viewer webxr quick-look" camera-controls="" poster="poster.webp" shadow-intensity="1" ar-status="not-presenting">
+              <div class="progress-bar hide" slot="progress-bar">
+                  <div class="update-bar"></div>
+              </div>
+              <button slot="ar-button" id="ar-button">
+                  View in your space
+              </button>
+             
+            </model-viewer>
               <p>La Pirámide de Kukulcán tiene 365 escalones, uno para cada día del año solar. Además, durante los equinoccios de primavera y otoño</p>
           </div>
         </div>
