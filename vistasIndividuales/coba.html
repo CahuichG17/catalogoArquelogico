@@ -70,8 +70,15 @@
           <div class="card__content">
             <h4>Nohoch Mul</h4>
             <br><br><br>
-            <model-viewer alt="modeloChichenItza" src="../modelos3D/cobaPiramide.glb" shadow-intensity="1" camera-controls
-              touch-action="pan-x" light="point" auto-rotate></model-viewer>
+          <model-viewer src="../modelos3D/cobaPiramide.glb" ar="" ar-modes="scene-viewer webxr quick-look" camera-controls="" poster="poster.webp" shadow-intensity="1" ar-status="not-presenting">
+              <div class="progress-bar hide" slot="progress-bar">
+                  <div class="update-bar"></div>
+              </div>
+              <button slot="ar-button" id="ar-button">
+                  Ver Realidad Aumentada
+              </button>
+             
+            </model-viewer>
            <p>La pirámide tiene una escalinata empinada que consta de 120 escalones. Subir a la cima de la pirámide ofrece una vista impresionante de la selva circundante y es una experiencia emocionante para los visitantes aventureros.</p>
           </div>
         </div>
