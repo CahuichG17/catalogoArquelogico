@@ -72,6 +72,16 @@
             <h4>Piramide de Kukulcán</h4>
             <br><br><br>
               <model-viewer alt="modeloChichenItza" src="../modelos3D/chichenItza3D.glb" shadow-intensity="1" camera-controls touch-action="pan-x" light="point"></model-viewer>
+            <body>
+    <button id="arButton">Ver en realidad aumentada</button>
+    <script>
+        const arButton = document.getElementById('arButton');
+        arButton.addEventListener('click', () => {
+            // Abre el visor de AR Quick Look cuando se hace clic en el botón
+            window.location.href = '../modelos3D/chichenItza3D.glb';
+        });
+    </script>
+            <button slot="ar-button" id="ar-button"
               <p>La Pirámide de Kukulcán tiene 365 escalones, uno para cada día del año solar. Además, durante los equinoccios de primavera y otoño</p>
           </div>
         </div>
