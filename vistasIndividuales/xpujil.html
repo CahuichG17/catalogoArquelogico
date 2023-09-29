@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
-  <script src="/js/scripts.js"></script>
-  <link rel="stylesheet" href="/css/individualesStyle.css">
+  <script src="../js/scripts.js"></script>
+  <link rel="stylesheet" href="../css/individualesStyle.css">
   <title>Xpujil</title>
 </head>
 
@@ -35,7 +35,7 @@
         </a>
 
         <audio controls autoplay>
-          <source src="/audio/tsompantli.mp3" type="audio/mpeg">
+          <source src="../audio/tsompantli.mp3" type="audio/mpeg">
         </audio>
       </div>
 
@@ -66,7 +66,13 @@
           <div class="card__content">
             <h4>Cola de Gato</h4>
             <br><br><br>
-              <model-viewer alt="modeloChichenItza" src="/modelos3D/xpujil3D.glb" shadow-intensity="1" camera-controls touch-action="pan-x" light="point"></model-viewer>
+               <model-viewer src="../modelos3D/xpujil3D.glb" ar="" ar-modes="scene-viewer webxr quick-look" camera-controls="" poster="poster.webp" shadow-intensity="1" ar-status="not-presenting">
+              <div class="progress-bar hide" slot="progress-bar">
+                  <div class="update-bar"></div>
+              </div>
+              <button slot="ar-button" id="ar-button">
+                  Ver Realidad Aumentada
+              </button>
               <p>En las cercanías de Xpujil, se encuentra el sitio arqueológico de Calakmul, que fue una antigua ciudad maya y es uno de los yacimientos arqueológicos más importantes de la región. Calakmul fue un poderoso centro político y económico en la época maya clásica.</p>
           </div>
         </div>
